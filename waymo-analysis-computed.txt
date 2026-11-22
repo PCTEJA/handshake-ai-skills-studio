@@ -1,0 +1,116 @@
+f1: /home/hatch/workspace/browser_downloads/sess-2322365355/browser-download-20261122T094316.355344245Z-1-CSV3_-_Collision_Counts_and_Comparison_to_Benchmarks_202009-202606-2022benchmark.csv
+f4: /home/hatch/workspace/browser_downloads/sess-2322365355/browser-download-20261122T094346.322717032Z-4-CSV4_-_Miles_and_Benchmark_Crashes_for_Dynamic_Benchmark_202009-202606-2022benchmark_v2.csv
+
+=== Q1 row counts ===
+f1 rows excl header: 1804
+f1 columns: ['Outcome', 'Benchmark Comparison', 'County Name', 'Grouping Type', 'Conflict Partner Type Group', 'Waymo Count', 'Delta V Less Than 1 Mph Percent', 'Waymo IPMM', 'Waymo IPMM CI Lower', 'Waymo IPMM CI Upper', 'Benchmark IPMM', 'Benchmark IPMM CI Lower', 'Benchmark IPMM CI Upper', 'Predicted Benchmark Count', 'Waymo Count Reduction', 'Waymo Percent Reduction', 'Waymo Percent Reduction CI Lower', 'Waymo Percent Reduction CI Upper', 'Waymo Rate Ratio', 'Waymo Rate Ratio CI Lower', 'Waymo Rate Ratio CI Upper']
+f4 rows excl header: 19032
+f4 columns: ['state_name', 'county_name', 'S2 Cell', 'Outcome', 'Benchmark Crash Count', 'HPMS Yearly Vehicle Miles Traveled', 'Waymo RO Miles']
+
+f1: one row = one Outcome x Benchmark Comparison x County Name x Grouping Type x Conflict Partner Type Group combination
+f4: one row = one state/county/S2 cell x Outcome combination
+
+f4 Outcome values: ['police_reported' 'observed_any_injury' 'fatal' 'ka' 'blincoe'
+ 'ego_airbag' 'airbag' 'blincoe_any_injury']
+f4 county_name values: ['San Francisco' 'Santa Clara' 'Travis' 'DeKalb' 'San Mateo' 'Maricopa'
+ 'Los Angeles' 'Fulton']
+f1 Outcome values: ['Any Airbag Deployment' 'Any Fatal' 'Any Injury'
+ 'Ego Vehicle Airbag Deployment' 'Police Report'
+ 'Suspected Serious Injury+']
+f1 Benchmark Comparison values: ['Any Airbag Deployment', 'Any Airbag Deployment (non-Dynamic)', 'Any Fatal', 'Any Fatal (Dynamic)', 'Any-injury-reported', 'Any-injury-reported (Observed, Dynamic)', 'Any-injury-reported (non-Dynamic)', 'Any-injury-reported (observed, non-Dynamic)', 'Ego Vehicle Airbag Deployment', 'Ego Vehicle Airbag Deployment (non-Dynamic)', 'Police-reported', 'Police-reported (non-Dynamic)', 'Suspected Serious Injury+', 'Suspected Serious Injury+ (non-Dynamic)']
+f1 County Name values: ['All Locations (mileage blended)', 'Atlanta Area', 'DeKalb', 'Fulton', 'Los Angeles', 'Maricopa', 'San Francisco', 'San Francisco Bay Area', 'San Mateo', 'Santa Clara', 'Travis']
+
+=== Q2 claim row ===
+   Outcome Benchmark Comparison                     County Name Grouping Type Conflict Partner Type Group  Waymo Count  Delta V Less Than 1 Mph Percent  Waymo IPMM  Waymo IPMM CI Lower  Waymo IPMM CI Upper  Benchmark IPMM  Benchmark IPMM CI Lower  Benchmark IPMM CI Upper  Predicted Benchmark Count  Waymo Count Reduction  Waymo Percent Reduction  Waymo Percent Reduction CI Lower  Waymo Percent Reduction CI Upper  Waymo Rate Ratio  Waymo Rate Ratio CI Lower  Waymo Rate Ratio CI Upper
+Any Injury  Any-injury-reported All Locations (mileage blended)   All Crashes                 All Crashes          183                          0.10929    0.674458             0.580275             0.779571        3.773649                 3.744637                  3.80283                1023.900849             840.900849                -0.821272                         -0.849602                         -0.789247          0.178728                   0.150398                   0.210753
+
+Exact stored values:
+  Outcome: 'Any Injury'
+  Benchmark Comparison: 'Any-injury-reported'
+  County Name: 'All Locations (mileage blended)'
+  Grouping Type: 'All Crashes'
+  Conflict Partner Type Group: 'All Crashes'
+  Waymo Count: 183
+  Delta V Less Than 1 Mph Percent: 0.1092896174863388
+  Waymo IPMM: 0.6744576921581616
+  Waymo IPMM CI Lower: 0.5802753017727966
+  Waymo IPMM CI Upper: 0.7795712370230392
+  Benchmark IPMM: 3.7736492013736367
+  Benchmark IPMM CI Lower: 3.744637145213456
+  Benchmark IPMM CI Upper: 3.8028301745097446
+  Predicted Benchmark Count: 1023.9008493499896
+  Waymo Count Reduction: 840.9008493499895
+  Waymo Percent Reduction: -0.8212717568149541
+  Waymo Percent Reduction CI Lower: -0.8496016786327638
+  Waymo Percent Reduction CI Upper: -0.7892471833307197
+  Waymo Rate Ratio: 0.1787282431850459
+  Waymo Rate Ratio CI Lower: 0.1503983213672362
+  Waymo Rate Ratio CI Upper: 0.2107528166692802
+
+Calculator verification (271.329 million RO miles):
+  183 / 271.329 = 0.6744579459 IPMM
+  stored Waymo IPMM = 0.6744576922
+  ratio to benchmark = 0.1787283104
+  1 - ratio = 0.8212716896  (i.e. 82.1272% fewer)
+  stored Waymo Percent Reduction = -0.8212717568  (= -82.1272%)
+  stored CI: [-0.8496016786, -0.7892471833] = [-84.9602%, -78.9247%]
+
+=== Q3 four-version sensitivity ===
+
+Any-injury-reported: rows=1
+  Waymo Count=183, Waymo IPMM=0.674458, Benchmark IPMM=3.773649, Reduction=82.1272%, 95% CI=[78.9247%, 84.9602%] (stored CI [-0.849602, -0.789247])
+
+Any-injury-reported (non-Dynamic): rows=1
+  Waymo Count=183, Waymo IPMM=0.674458, Benchmark IPMM=3.136082, Reduction=78.4936%, 95% CI=[74.6388%, 81.9034%] (stored CI [-0.819034, -0.746388])
+
+Any-injury-reported (Observed, Dynamic): rows=1
+  Waymo Count=183, Waymo IPMM=0.674458, Benchmark IPMM=2.580686, Reduction=73.8652%, 95% CI=[69.1787%, 78.0101%] (stored CI [-0.780101, -0.691787])
+
+Any-injury-reported (observed, non-Dynamic): rows=1
+  Waymo Count=183, Waymo IPMM=0.674458, Benchmark IPMM=2.144397, Reduction=68.5479%, 95% CI=[62.9052%, 73.5380%] (stored CI [-0.735380, -0.629052])
+
+=== Q4 unreported-crash estimate test ===
+Dynamic: with unreported 3.773649 / without 2.580686 = 1.462266
+Non-dynamic: with unreported 3.136082 / without 2.144397 = 1.462454
+Page's 32% correction: 1/0.68 = 1.470588
+
+=== Q5 San Francisco, observed_any_injury ===
+SF rows: 134
+Total Benchmark Crash Count = 3555.0976430976425
+Total HPMS Yearly VMT = 1285157987.4763
+Total Waymo RO Miles = 67907810.8153
+(a) unweighted rate = 3555.0976430976425 / 1285157987.4763 x 1e6 = 2.766273 per million miles
+(b) Waymo-weighted rate = 3.560279 per million miles
+Difference (b - a) = 0.794006 per million miles; ratio b/a = 1.2870
+
+Top 5 S2 areas by Waymo RO Miles:
+  S2 9260949581900808192: Benchmark Crash Count=166.74747474747474, HPMS VMT=56200021.2071, Waymo RO Miles=2902931.4474, rate=2.967036 per million miles
+  S2 9263761651608322048: Benchmark Crash Count=138.64309764309763, HPMS VMT=16187312.2447, Waymo RO Miles=2563174.5455, rate=8.564924 per million miles
+  S2 9260949616260546560: Benchmark Crash Count=190.3299663299663, HPMS VMT=45816118.5889, Waymo RO Miles=2489759.1889, rate=4.154214 per million miles
+  S2 9260949547541069824: Benchmark Crash Count=97.68686868686868, HPMS VMT=31326710.9937, Waymo RO Miles=2234998.5054, rate=3.118325 per million miles
+  S2 9260949959857930240: Benchmark Crash Count=53.58249158249158, HPMS VMT=26302957.7292, Waymo RO Miles=2067880.8916, rate=2.037128 per million miles
+
+SF areas total: 134; Waymo RO miles in SF (observed_any_injury rows) = 67907810.82
+
+=== Q6 fatal-crash check ===
+fatal rows: 2
+
+Benchmark Comparison: Any Fatal
+  Waymo Count=2, Waymo IPMM=0.007371, Benchmark IPMM=0.027353, Reduction=73.0521%, 95% CI=[-10.1553%, 97.7552%] (stored [-0.977552, 0.101553])
+  Rate ratio=0.269479, CI=[0.022448, 1.101553]
+  Predicted Benchmark Count=7.4217, Waymo Count Reduction=5.4217
+
+Benchmark Comparison: Any Fatal (Dynamic)
+  Waymo Count=2, Waymo IPMM=0.007371, Benchmark IPMM=0.035540, Reduction=79.2599%, 95% CI=[15.3476%, 98.2711%] (stored [-0.982711, -0.153476])
+  Rate ratio=0.207401, CI=[0.017289, 0.846524]
+  Predicted Benchmark Count=9.6431, Waymo Count Reduction=7.6431
+
+=== Q7 classification inputs ===
+Any-injury-reported reduction 82.13%, 95% CI [78.92%, 84.96%]
+Any-injury-reported (non-Dynamic) reduction 78.49%, 95% CI [74.64%, 81.90%]
+Any-injury-reported (Observed, Dynamic) reduction 73.87%, 95% CI [69.18%, 78.01%]
+Any-injury-reported (observed, non-Dynamic) reduction 68.55%, 95% CI [62.91%, 73.54%]
+Injury reductions range: min 68.55%, max 82.13%, spread 13.58 points
+Fatal reductions:
+Any Fatal reduction 73.05%, CI [-10.16%, 97.76%]
+Any Fatal (Dynamic) reduction 79.26%, CI [15.35%, 98.27%]
