@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZHuddle Competitor Snapshot Generator</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", serif; color: #1f2937; max-width: 960px; margin: 0 auto; padding: 24px; line-height: 1.5; }
+  h1 { color: #0b3d2e; font-size: 2em; margin-bottom: 0; }
+  h2 { color: #0b3d2e; border-bottom: 2px solid #0b3d2e; padding-bottom: 4px; margin-top: 40px; }
+  h3 { color: #14532d; }
+  .subtitle { color: #4b5563; font-size: 1.1em; margin-top: 6px; }
+  .generator { border: 2px solid #0b3d2e; border-radius: 10px; padding: 16px; margin-top: 24px; background: #f0fdf4; }
+  .generator button { background: #0b3d2e; color: #fff; border: none; border-radius: 6px; padding: 10px 16px; margin: 4px; cursor: pointer; font-size: 1em; }
+  .generator button:hover { background: #14532d; }
+  .snapshot { display: none; margin-top: 16px; }
+  .snapshot.active { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid #9ca3af; padding: 8px; text-align: left; vertical-align: top; }
+  th { background: #0b3d2e; color: #fff; }
+  tr:nth-child(even) td { background: #f9fafb; }
+  form label { display: block; margin: 8px 0 2px; font-weight: bold; }
+  form input, form textarea { width: 100%; padding: 8px; border: 1px solid #9ca3af; border-radius: 4px; box-sizing: border-box; }
+  form button { background: #0b3d2e; color: #fff; border: none; border-radius: 6px; padding: 10px 16px; margin-top: 10px; cursor: pointer; font-size: 1em; }
+  .unknown { color: #b45309; font-weight: bold; }
+  .note { background: #fefce8; border-left: 4px solid #eab308; padding: 10px 14px; margin: 12px 0; }
+  ul { margin: 8px 0; }
+  @media print { .generator button, form button { display: none; } body { max-width: 100%; } }
+</style>
+</head>
+<body>
+
+<h1>ZHuddle Competitor Snapshot Generator</h1>
+<p class="subtitle">Python learning platforms — side-by-side snapshots vs ZHuddle | Facts checked 22 November 2026</p>
+
+<div class="generator">
+  <h2 style="margin-top:0; border:none;">Generate a snapshot</h2>
+  <p>Pick a competitor to view its snapshot, or add a new company.</p>
+  <button onclick="showSnapshot('codecademy')">Codecademy</button>
+  <button onclick="showSnapshot('freecodecamp')">freeCodeCamp</button>
+  <button onclick="showSnapshot('khan')">Khan Academy</button>
+
+  <div id="snap-codecademy" class="snapshot active">
+    <h3>ZHuddle vs Codecademy</h3>
+    <table>
+      <tr><th>Dimension</th><th>ZHuddle</th><th>Codecademy</th></tr>
+      <tr><td>Who they serve</td><td>Python learners at the University of North Texas, learning in small steps (Maker-stated, not externally verified)</td><td>People building skills and careers in tech, including Python, web development, data science, and AI</td></tr>
+      <tr><td>What they teach (Python focus)</td><td>Python only, in small-steps lessons (Maker-stated, not externally verified)</td><td>Python is one subject in a catalog that also includes web development, data science, AI, and more</td></tr>
+      <tr><td>Key features</td><td>Small-steps lessons for UNT students (Maker-stated, not externally verified)</td><td>Basic: basic access with limited courses. Plus: skill paths, certificates of completion, portfolio projects, skills tracking. Pro: career paths, certification paths, technical interview prep and simulator, job-readiness checker, professional certifications</td></tr>
+      <tr><td>Pricing / publicly visible revenue model</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>Basic $0, always free. Plus $14.99/month billed annually or $29.99 billed monthly. Pro $19.99/month billed annually or $39.99 billed monthly</td></tr>
+      <tr><td>How they position themselves</td><td>Python, small steps, UNT students (Maker-stated, not externally verified)</td><td>Pro is positioned as "Build a career / Develop the experience to land a job"</td></tr>
+      <tr><td>What makes ZHuddle different / takeaway</td><td colspan="2">ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because Codecademy charges for career paths while free alternatives already offer broad learning free.</td></tr>
+    </table>
+  </div>
+
+  <div id="snap-freecodecamp" class="snapshot">
+    <h3>ZHuddle vs freeCodeCamp</h3>
+    <table>
+      <tr><th>Dimension</th><th>ZHuddle</th><th>freeCodeCamp</th></tr>
+      <tr><td>Who they serve</td><td>Python learners at the University of North Texas, learning in small steps (Maker-stated, not externally verified)</td><td>People learning to code for free; mission "to help people learn to code for free"</td></tr>
+      <tr><td>What they teach (Python focus)</td><td>Python only, in small-steps lessons (Maker-stated, not externally verified)</td><td>Curriculum includes Responsive Web Design, JavaScript, Front-End Development Libraries, Python, Relational Databases, Back-End Development and APIs, and Certified Full-Stack Developer Curriculum. The Python Certification "teaches you the fundamentals of Python programming"; to earn it, complete the five required projects to qualify for the certification exam and pass the exam; the Python course has 588 steps</td></tr>
+      <tr><td>Key features</td><td>Small-steps lessons for UNT students (Maker-stated, not externally verified)</td><td>Free curriculum; sign-in is free to save progress</td></tr>
+      <tr><td>Pricing / publicly visible revenue model</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>Free to learn; donor-supported 501(c)(3) nonprofit</td></tr>
+      <tr><td>How they position themselves</td><td>Python, small steps, UNT students (Maker-stated, not externally verified)</td><td>Free coding education for everyone, funded by donors</td></tr>
+      <tr><td>What makes ZHuddle different / takeaway</td><td colspan="2">ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because freeCodeCamp already offers broad learning free.</td></tr>
+    </table>
+  </div>
+
+  <div id="snap-khan" class="snapshot">
+    <h3>ZHuddle vs Khan Academy</h3>
+    <table>
+      <tr><th>Dimension</th><th>ZHuddle</th><th>Khan Academy</th></tr>
+      <tr><td>Who they serve</td><td>Python learners at the University of North Texas, learning in small steps (Maker-stated, not externally verified)</td><td>Learners of all ages; teachers can sign up free to assign practice and track progress</td></tr>
+      <tr><td>What they teach (Python focus)</td><td>Python only, in small-steps lessons (Maker-stated, not externally verified)</td><td>Its Computer programming course has 8 units covering JavaScript, HTML/CSS, SQL, advanced JavaScript and jQuery — no Python course was listed on that page when checked. It covers many subjects: math, science, English language arts, computing, test prep</td></tr>
+      <tr><td>Key features</td><td>Small-steps lessons for UNT students (Maker-stated, not externally verified)</td><td>Free courses across many subjects; teachers can assign practice and track progress</td></tr>
+      <tr><td>Pricing / publicly visible revenue model</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>Free to learn; 501(c)(3) nonprofit organization, donation-funded. Mission "to provide a free, world-class education to anyone, anywhere"</td></tr>
+      <tr><td>How they position themselves</td><td>Python, small steps, UNT students (Maker-stated, not externally verified)</td><td>Free, world-class education for anyone, anywhere</td></tr>
+      <tr><td>What makes ZHuddle different / takeaway</td><td colspan="2">ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because Khan Academy already offers broad learning free and does not teach Python on the page checked.</td></tr>
+    </table>
+  </div>
+
+  <div id="snap-new" class="snapshot">
+    <h3>New company snapshot</h3>
+    <div id="new-output"></div>
+  </div>
+
+  <h3>New company</h3>
+  <form onsubmit="addCompany(event)">
+    <label for="f-name">Company name</label>
+    <input id="f-name" required>
+    <label for="f-does">What it does</label>
+    <textarea id="f-does" rows="2"></textarea>
+    <label for="f-serves">Who it serves</label>
+    <textarea id="f-serves" rows="2"></textarea>
+    <label for="f-features">Key features</label>
+    <textarea id="f-features" rows="2"></textarea>
+    <label for="f-pricing">Pricing / revenue model</label>
+    <textarea id="f-pricing" rows="2"></textarea>
+    <label for="f-position">How it positions itself</label>
+    <textarea id="f-position" rows="2"></textarea>
+    <label for="f-source">Source URL</label>
+    <input id="f-source" type="url">
+    <label for="f-date">Date viewed</label>
+    <input id="f-date" type="date">
+    <button type="submit">Generate snapshot</button>
+  </form>
+</div>
+
+<h2>Reusable assistant instructions (TRACE rules)</h2>
+<ul>
+  <li>Use only public sources. Never present a guess as fact.</li>
+  <li>Keep a fact log with: fact number / company / dimension / fact / source URL / date viewed / quote or paraphrase / confidence (Stated, Inferred, or Unknown).</li>
+  <li>Mark unsupported items <span class="unknown">[UNKNOWN]</span>.</li>
+  <li>Produce a one-page snapshot per competitor.</li>
+  <li>List what public sources cannot tell you.</li>
+</ul>
+
+<h2>Snapshot 1 — ZHuddle vs Codecademy</h2>
+<p>See the interactive snapshot above for the side-by-side table. Decision the comparison informs: ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because freeCodeCamp and Khan Academy already offer broad learning free, and Codecademy charges for career paths.</p>
+<h3>Fact log — Codecademy</h3>
+<table>
+  <tr><th>#</th><th>Company</th><th>Dimension</th><th>Fact</th><th>Source URL</th><th>Date viewed</th><th>Quote / paraphrase</th><th>Confidence</th></tr>
+  <tr><td>1</td><td>Codecademy</td><td>Pricing</td><td>Basic plan $0, always free; start learning with basic access, courses limited under Basic</td><td>https://www.codecademy.com/pricing</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>2</td><td>Codecademy</td><td>Pricing</td><td>Plus $14.99/month billed annually or $29.99 billed monthly; includes skill paths, certificates of completion, portfolio projects, skills tracking</td><td>https://www.codecademy.com/pricing</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>3</td><td>Codecademy</td><td>Pricing</td><td>Pro $19.99/month billed annually or $39.99 billed monthly; includes career paths, certification paths, technical interview prep and simulator, job-readiness checker, professional certifications</td><td>https://www.codecademy.com/pricing</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>4</td><td>Codecademy</td><td>Catalog</td><td>Catalog includes Python, web development, data science, AI and more</td><td>https://www.codecademy.com/pricing</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>5</td><td>Codecademy</td><td>Positioning</td><td>Pro is positioned as "Build a career / Develop the experience to land a job"</td><td>https://www.codecademy.com/pricing</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>6</td><td>ZHuddle</td><td>Pricing</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>—</td><td>22 Nov 2026</td><td>—</td><td>Unknown</td></tr>
+</table>
+<h3>What public sources cannot tell us</h3>
+<ul>
+  <li>Revenue, headcount, user counts, completion rates, and learner outcomes for Codecademy — none of these were stated on the pages checked; do not infer them.</li>
+</ul>
+
+<h2>Snapshot 2 — ZHuddle vs freeCodeCamp</h2>
+<p>See the interactive snapshot above for the side-by-side table. Decision the comparison informs: ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because freeCodeCamp and Khan Academy already offer broad learning free, and Codecademy charges for career paths.</p>
+<h3>Fact log — freeCodeCamp</h3>
+<table>
+  <tr><th>#</th><th>Company</th><th>Dimension</th><th>Fact</th><th>Source URL</th><th>Date viewed</th><th>Quote / paraphrase</th><th>Confidence</th></tr>
+  <tr><td>1</td><td>freeCodeCamp</td><td>Mission</td><td>Mission "to help people learn to code for free"; donor-supported 501(c)(3) nonprofit</td><td>https://www.freecodecamp.org/learn</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>2</td><td>freeCodeCamp</td><td>Curriculum</td><td>Curriculum includes Responsive Web Design, JavaScript, Front-End Development Libraries, Python, Relational Databases, Back-End Development and APIs, and Certified Full-Stack Developer Curriculum</td><td>https://www.freecodecamp.org/learn</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>3</td><td>freeCodeCamp</td><td>Python</td><td>Python Certification "teaches you the fundamentals of Python programming"; to earn it, complete the five required projects to qualify for the certification exam and pass the exam; the Python course has 588 steps</td><td>https://www.freecodecamp.org/learn/python-v9/</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>4</td><td>freeCodeCamp</td><td>Pricing</td><td>Sign-in is free to save progress</td><td>https://www.freecodecamp.org/learn</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>5</td><td>ZHuddle</td><td>Pricing</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>—</td><td>22 Nov 2026</td><td>—</td><td>Unknown</td></tr>
+</table>
+<h3>What public sources cannot tell us</h3>
+<ul>
+  <li>Revenue, headcount, user counts, completion rates, and learner outcomes for freeCodeCamp — none of these were stated on the pages checked; do not infer them.</li>
+</ul>
+
+<h2>Snapshot 3 — ZHuddle vs Khan Academy</h2>
+<p>See the interactive snapshot above for the side-by-side table. Decision the comparison informs: ZHuddle should compete on focus — Python only, small steps, UNT students — not on breadth or price, because freeCodeCamp and Khan Academy already offer broad learning free, and Codecademy charges for career paths.</p>
+<h3>Fact log — Khan Academy</h3>
+<table>
+  <tr><th>#</th><th>Company</th><th>Dimension</th><th>Fact</th><th>Source URL</th><th>Date viewed</th><th>Quote / paraphrase</th><th>Confidence</th></tr>
+  <tr><td>1</td><td>Khan Academy</td><td>Mission</td><td>Mission "to provide a free, world-class education to anyone, anywhere"; Khan Academy is a 501(c)(3) nonprofit organization, donation-funded</td><td>https://www.khanacademy.org/computing/computer-programming</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>2</td><td>Khan Academy</td><td>Python</td><td>Its Computer programming course has 8 units covering JavaScript, HTML/CSS, SQL, advanced JavaScript and jQuery — no Python course was listed on that page when checked</td><td>https://www.khanacademy.org/computing/computer-programming</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>3</td><td>Khan Academy</td><td>Subjects</td><td>It covers many subjects (math, science, English language arts, computing, test prep); teachers can sign up free to assign practice and track progress</td><td>https://www.khanacademy.org/computing/computer-programming</td><td>22 Nov 2026</td><td>Stated</td><td>Stated</td></tr>
+  <tr><td>4</td><td>ZHuddle</td><td>Pricing</td><td><span class="unknown">[UNKNOWN]</span> — no public pricing page was cited for ZHuddle in this project</td><td>—</td><td>22 Nov 2026</td><td>—</td><td>Unknown</td></tr>
+</table>
+<h3>What public sources cannot tell us</h3>
+<ul>
+  <li>Revenue, headcount, user counts, completion rates, and learner outcomes for Khan Academy — none of these were stated on the pages checked; do not infer them.</li>
+</ul>
+
+<div class="note"><strong>Sources note:</strong> All competitor facts above were checked on the competitors' own public pages on 22 November 2026. ZHuddle descriptions are labeled Maker-stated, not externally verified. Anything not found on a public page is marked <span class="unknown">[UNKNOWN]</span>.</div>
+
+<script>
+function showSnapshot(id) {
+  document.querySelectorAll('.snapshot').forEach(function (el) { el.classList.remove('active'); });
+  document.getElementById('snap-' + id).classList.add('active');
+}
+function esc(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function addCompany(e) {
+  e.preventDefault();
+  var v = function (id) { return document.getElementById(id).value.trim() || '[UNKNOWN]'; };
+  var name = v('f-name');
+  var rows = [
+    ['Who they serve', v('f-serves')],
+    ['What they do', v('f-does')],
+    ['Key features', v('f-features')],
+    ['Pricing / revenue model', v('f-pricing')],
+    ['How they position themselves', v('f-position')],
+    ['Source URL', v('f-source')],
+    ['Date viewed', v('f-date')]
+  ];
+  var html = '<h3>ZHuddle vs ' + esc(name) + '</h3><table><tr><th>Dimension</th><th>' + esc(name) + '</th></tr>';
+  rows.forEach(function (r) { html += '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>'; });
+  html += '</table>';
+  document.getElementById('new-output').innerHTML = html;
+  showSnapshot('new');
+}
+</script>
+</body>
+</html>
