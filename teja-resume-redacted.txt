@@ -1,0 +1,134 @@
+                                                      TEJA P C
+                                       tejapc.com | pcteja1028@gmail.com
+                                            linkedin.com/in/tejapc | github.com/PCTEJA
+
+
+EDUCATION
+University of North Texas, Denton, Texas | Aug 2025 - May 2027
+Master of Science in Computer Science | GPA: 4.0/4.0
+
+PROFESSIONAL SUMMARY
+Software engineer and Computer Science graduate student building AI/ML platforms, model-serving APIs, and production data
+pipelines. Experience with model-serving optimization (40% faster inference through batching, asynchronous I/O, and concurrency
+tuning), LLM applications and evaluation, MLOps, PyTorch, FastAPI, Docker, and Kubernetes in production. Open-source
+contributor to npm tooling, Headroom, and Microsoft's Python Debugger for VS Code; creator of a Python learning platform used
+by 550+ students.
+
+SELECTED HIGHLIGHTS FOR THIS ROLE
+ • MLOps at scale: built ML document-processing pipelines and FastAPI services on GCP Cloud Run at Cotality, with model
+   versioning, monitoring, retraining, and LLM evaluation workflows.
+ • LLM applications: built a MERN application integrating OpenAI GPT APIs to generate contextual responses for knowledge
+   management, and a Python learning platform used by 550+ students.
+ • Containerized services at scale: built FastAPI REST services, containerized them with Docker, and deployed scalable
+   microservices on GCP Cloud Run, improving model-serving latency by 40%.
+ • Regression testing and tooling: added regression coverage in Headroom (49 passing tests on maintainer validation, merged PR
+   #4895) and in Microsoft's Python Debugger (six maintainer-approved PRs #1145 to #1150, including a PowerShell regression
+   test and a shared test timeout fix for a cold-start race.
+ • Platform reliability: built and optimized production pipelines processing 10M+ records, with automated scheduling,
+   dependencies, error handling, and retry logic, and zero data loss on a multi-million-record migration.
+ • Cost savings at Foot Locker: saved nearly $200,000 in API costs as a Software Engineer at Foot Locker (Jun-Aug 2026).
+
+PROFESSIONAL EXPERIENCE
+FootLocker, USA | Software Engineering | Jun 2026 - Aug 2026
+ • Develop and maintain responsive front-end features using JavaScript (ES6+) and modern web frameworks for store and
+   e-commerce systems.
+ • Design back-end services and REST APIs supporting order management and digital platforms, with reliable data flow across
+   interconnected applications.
+ • Collaborate with Quality Engineering teams to validate full-stack functionality across store systems, mobile applications, and
+   order management; enhance test plans and regression automation suites.
+ • Coordinate with onshore and offshore teams through Agile planning, stand-ups, and retrospectives; communicate testing
+   progress, risks, and blockers.
+University of North Texas | Graduate Teaching Assistant | Oct 2025 - May 2026
+ • Supported graduate-level Python, Machine Learning, and AI Fundamentals instruction for 180+ students; evaluated 50+
+   technical assignments for algorithm correctness and code efficiency.
+ • Led weekly mentorship sessions to explain technical concepts and debug student code; maintained grading and attendance
+   records for faculty operations.
+Tata Consultancy Services | Aug 2022 - Sep 2025
+Client: Cotality, USA | Machine Learning Operations Engineer | 2023 - 2025
+ • Built Python-based document-processing pipelines using OCR and Gemini API workflows to extract structured fields from
+   PDFs and images, reducing manual data entry by 70% across thousands of daily documents.
+ • Developed FastAPI REST services, containerized them with Docker, and deployed scalable microservices on GCP Cloud Run;
+   improved model-serving latency by 40% through batching, asynchronous I/O, and concurrency tuning.
+ • Integrated GCS object storage, Pub/Sub messaging, and event-driven triggers to automate high-volume data processing and
+   downstream delivery.
+ • Implemented JSON-schema constraints, regex checks, confidence thresholds, and fallback rules to improve extraction
+   reliability; incorporated user corrections into the Xtractly platform feedback loop.
+ • Documented model versioning, monitoring, retraining, and LLM evaluation workflows; received Best Team Member, 2024.
+Tata Consultancy Services | Client: Now Pensions Limited, UK | 2022 - 2023
+Data Engineer
+ • Built and optimized production pipelines processing 10M+ records using Python and SQL, including window functions, CTEs,
+   indexing, and query-plan analysis.
+ • Migrated millions of records with Talend ETL and zero data loss; automated scheduling, dependencies, error handling, and
+   retry logic for reliable pipeline execution.
+ • Implemented CI/CD and containerized deployments with Docker and Kubernetes, reducing release cycle time by 30%;
+   participated in code reviews and quality audits. Received Best Team Member, 2022.
+Tata Consultancy Services, USA | Software Engineer Intern | Feb 2020 - Jun 2020
+Client: AVIVA | Full-stack and NLP Engineering
+ • Developed personalized real-time video messaging and animation-generation functionality; applied NLP to generate insurance
+   premium information tailored to customer needs.
+Ural Federal University, Russia | Data Science Intern | Jun 2019 - Jul 2020
+ • Built day-ahead solar-generation prediction models using power-plant data from Astrakhan, Russia; tuned model parameters
+   with K-fold cross-validation and earned 1st place and an Energy Track diploma.
+
+OPEN SOURCE CONTRIBUTIONS
+Headroom | Python ML Infrastructure | Merged
+75,000+ GitHub stars | headroomlabs-ai/headroom
+ • Fixed a compression-policy enforcement bug by propagating a read-only gate through local and remote compressors, batch
+   reconstruction, sequential fallback, and router paths while preserving cache retrieval and default behavior.
+ • Added regression coverage, including forced batch reconstruction; reproduced failures against the base code. Maintainer
+   validation reported 49 passing tests and 8 native-dependent skips; approved and merged by JerrettDavis. Pull requests: #4895
+Microsoft Python Debugger for VS Code | Six Maintainer-Approved PRs
+ • Extended launch/attach JSON schemas and TypeScript interfaces for multi-threaded debugging options; fixed editor-change
+   handling so automatic Python configuration controls reflect the active file.
+ • Corrected PowerShell and Bash argument forwarding and terminal PATH precedence to preserve arguments and select the
+   bundled debugger; added a PowerShell regression test.
+ • Applied the shared test timeout to address a cold-start race that could contaminate subsequent test stubs. Changes approved by
+   Microsoft maintainers; merge pending. Pull requests: #1145 | #1146 | #1147 | #1148 | #1149 | #1150
+npm Pacote | JavaScript Package Tooling | Maintainer Approved
+ • Fixed extension-loading behavior across directory packing and Git-dependency preparation by forwarding ignoreExtension and
+   propagating subprocess configuration. Added regressions verified to fail before the fix and pass afterward; 41 tests passed
+   across directory and Git suites. Approved by jeffkl; merge pending. Pull requests: #536
+
+TECHNICAL SKILLS
+Languages: Python, TypeScript, JavaScript (ES6+), SQL, Java, C++
+Machine Learning: PyTorch, scikit-learn, NLTK, spaCy, OpenAI APIs, Gemini API, OCR workflows, prompt engineering, LLM
+evaluation
+Back End and Data: FastAPI, Node.js, REST APIs, MERN stack, ETL/ELT, Talend, data validation
+Cloud and DevOps: Kubernetes (k8s), Docker, GCP Cloud Run, App Engine, Cloud Build, GCS, Pub/Sub, CI/CD, AWS basics
+Front End: React, HTML, CSS, Three.js, responsive web applications, interactive visualization
+Testing and Tooling: Git, GitHub, pytest, regression testing, TypeScript compilation, ESLint, Ruff, Bash, PowerShell
+Foundations: Data structures and algorithms, object-oriented design, database management systems
+
+PROJECTS AND RESEARCH
+ZHuddle | Python Learning Platform | Creator and Developer
+TypeScript, React, Netlify | zhuddle.com
+ • Built and launched a Python learning platform used by 550+ University of North Texas students to study programming
+   concepts and support coursework.
+ • Developed an accessible web learning resource connecting Python concepts with coursework applications; featured on
+   Handshake for creating the platform.
+Full-Stack LLM Integration and 3D Portfolio | 2024 - 2025
+React, Node.js, Three.js, OpenAI APIs, Docker, GCP Cloud Run | tejapc.com
+ • Built a MERN application integrating OpenAI GPT APIs to generate contextual responses for knowledge management;
+   deployed the application using Docker and GCP Cloud Run.
+ • Created a 3D-themed portfolio with JavaScript animations and Three.js to demonstrate interactive front-end development.
+MCP Learning Platform | Interactive Web Module | In Development
+HTML, CSS, JavaScript | intro-to-mcp.vercel.app
+ • Developed an interactive educational module presenting AI integration concepts through dynamic visuals and intuitive
+   navigation; translated protocol architecture and use cases into developer-oriented learning content.
+Solar Power Forecasting Research
+ • Developed machine-learning approaches for day-ahead photovoltaic forecasting using data from a large-scale solar power plant
+   in Russia.
+ • Combined retrospective metering data and open-source weather information for feature identification and forecasting-error
+   analysis; investigated Random Forest regression and model evaluation. Selected publication: The Industrial Methods to
+   Improve the Day-Ahead Solar Forecasting
+
+CERTIFICATIONS
+ • Oracle Cloud Infrastructure 2023 Certified Application Integration Professional
+ • Machine Learning, Andrew Ng, Coursera / Stanford
+ • How to Win a Data Science Competition: Learn from Top Kagglers, Coursera / HSE
+ • Research Paper Presentation, ICAECT 2020
+
+LEADERSHIP AND HONORS
+ • Student Member, IEEE, Chennai; Core Organizer, Data Structures and Algorithms Club, BIHER.
+ • Received a research publication grant of INR 400,000; won a hackathon and received a diploma at Ural Federal University.
+
